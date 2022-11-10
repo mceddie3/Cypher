@@ -83,7 +83,7 @@ def lindseyscipher():
   greet = input ("What would you like to translate? ")
   counter = 0
   while len(greet) > (counter):
-    line += chr(((ord(greet[counter]) + 13) % 97) + 97)
+    line += chr(((ord(greet[counter]) + 13) % 26) + 97)
     print(ord(greet[counter]))
     counter += 1
   print(line)
@@ -103,7 +103,7 @@ def main(counter):
         lindseyscipher()
         
     else:
-      print('WRONG MOTHA F*CKA')
+      print('WRONG')
       counter=counter+1
     if((x!='11036574.JM')and(counter<3)):
       main(counter)
